@@ -49,9 +49,7 @@
         //index dulu data mana yang akan di hapus
         const index = this.carts.findIndex(added => added.code === id)
         //Jika Index sudah di temukan maka tinggal meremove array dengan function splice()
-        if(index) {
-          this.carts.splice(index, 1)
-        }
+        this.carts.splice(index, 1)
       }
     },
     created(){
