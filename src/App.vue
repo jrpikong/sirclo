@@ -1,5 +1,9 @@
 <template>
   <div id="app">
+    <router-link to="/" ta>Temperature</router-link>
+    <router-link to="/shopping" ta>Shopping</router-link>
+    <hr>
+
     <router-view/>
   </div>
 </template>

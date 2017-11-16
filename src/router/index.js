@@ -13,7 +13,6 @@ export default new Router({
       path: '/shopping',
       name: 'Shopping',
       component: require('./../components/ShoopingCart.vue').default
-    },
-
+    }
   ]
 })
