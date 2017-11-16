@@ -3,13 +3,14 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import VueResource from 'vue-resource'
 import Vuex from 'vuex'
+Vue.use(VueResource)
+Vue.use(Vuex)
 
-Vue.set(Vuex)
-
-/*Deklarasi end point api secara global*/
-Vue.http.options.root = 'http://openweathermap.org/forecast5'
 Vue.config.productionTip = false
+/*Deklarasi end point api secara global*/
+Vue.http.options.root ='http://api.openweathermap.org/data/2.5'
 
 /* eslint-disable no-new */
 new Vue({
