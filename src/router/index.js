@@ -8,6 +8,12 @@ export default new Router({
       path: '/',
       name: 'Temperatur',
       component: require('./../components/Temperatur.vue').default
-    }
+    },
+    {
+      path: '/shopping',
+      name: 'Shopping',
+      component: require('./../components/ShoopingCart.vue').default
+    },
+
   ]
 })
